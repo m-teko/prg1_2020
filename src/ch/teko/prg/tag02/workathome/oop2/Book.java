@@ -1,4 +1,4 @@
-package ch.teko.prg.tag02.workathome;
+package ch.teko.prg.tag02.workathome.oop2;
 
 public class Book {
     //Attribute
