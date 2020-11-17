@@ -30,23 +30,15 @@ public class Book {
         return titel;
     }
 
-    public void setTitel(String titel) {
-        this.titel = titel;
-    }
-
     public String getAutor() {
         return autor;
-    }
-
-    public void setAutor(String autor) {
-        this.autor = autor;
     }
 
     public double getPreis() {
         return preis;
     }
 
-    public void setPreis(float preis) {
+    public void setPreis(double preis) {
         this.preis = preis;
     }
 
@@ -54,7 +46,8 @@ public class Book {
         return kaufjahr;
     }
 
-    public void setKaufjahr(int kaufjahr) {
+    public void setKaufjahr(int Kaufjahr) {
         this.kaufjahr = kaufjahr;
     }
+
 }
