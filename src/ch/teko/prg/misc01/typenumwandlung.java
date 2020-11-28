@@ -32,6 +32,28 @@ public class typenumwandlung {
         System.out.println("long: " + g);
         System.out.println("Cast von long to double: " + h);
 
+        //explizite Beispiele
+
+        double i = 96432431.998;
+        int j = (int) i;
+
+        double k = 75635732.513462;
+        float l = (float) k;
+
+        long m = 92123456345L;
+        int n = (int) m;
+
+        System.out.println();
+        System.out.println();
+        System.out.println("EXPLIZITE BEISPIELE:");
+        System.out.println("double: " + i);
+        System.out.println("Cast von double zu integer: " + j + " <- man beachte den Wertverlust!!");
+        System.out.println();
+        System.out.println("double: " + k);
+        System.out.println("cast von double zu float: " + l + " <- man beachte den Wertverlust!!");
+        System.out.println();
+        System.out.println("long: " + m);
+        System.out.println("Cast von long zu integer: " + n + " <- man beachte den Wertverlust!!");
 
     }
 }
