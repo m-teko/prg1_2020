@@ -7,12 +7,12 @@ public class Zahl {
 
     //Konstruktoren
 
-    public Zahl (int x, int y) {
+    public Zahl(int x, int y) {
         this.x = x;
         this.y = y;
     }
 
-    public Zahl () {
+    public Zahl() {
         this.x = 0;
         this.y = 0;
     }
