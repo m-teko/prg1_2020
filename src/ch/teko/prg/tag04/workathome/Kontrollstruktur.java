@@ -16,10 +16,21 @@ public class Kontrollstruktur {
 
     //Methoden
 
-    public String getName() { return name;}
-    public void setName(String name) { this.name = name; }
-    public double getVersion() { return version; }
-    public void setVersion(double version) { this.version = version; }
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getVersion() {
+        return version;
+    }
+
+    public void setVersion(double version) {
+        this.version = version;
+    }
 
     public double calulatePrice(int alter) {
         double Preis;
@@ -38,21 +49,37 @@ public class Kontrollstruktur {
         return Preis;
     }
 
-    public String testEvaluation(int Punkte){
-        switch (Punkte){
-            case 10:
-                System.out.println("Sehr gut");
-                break;
-            case 9:
-                System.out.println("Gut");
-                break;
-            case 8:
-                System.out.println("Befriedigend");
-                break;
-            default:
-                System.out.println("Ungenügend - nicht genug Punkte");
-        }
-            return "";
+    public String testEvaluation(int Punkte) {
+
+        if (Punkte >= 0 & Punkte <= 10) {
+
+            switch (Punkte) {
+                case 10:
+                    System.out.println("Sehr gut");
+                    break;
+                case 9:
+                    System.out.println("Gut");
+                    break;
+                case 8:
+                    System.out.println("Befriedigend");
+                    break;
+                default:
+                    System.out.println("Ungenügend - nicht genug Punkte");
+            }
+
+        } else {
+            System.out.println("nicht darstellbar --> Der Punktewert muss zwischen 0 und 10 liegen");
+
+        } return "";
     }
 
+    public String counter(int countdown) {
+        int zahl = 10;
+        while(zahl <= 10) {
+            zahl = zahl - 1;
+            System.out.println(zahl);
+
+        }
+      return "";
+    }
 }
